@@ -1,0 +1,368 @@
+/* 초기화 */
+*{
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,Helvetica Neue, sans-serif;
+}
+#main-page{
+    /* 백그라운드  */
+    background: url(image/bg.jpg) no-repeat center center;
+    background-size: cover;
+    height: 85vh;
+}
+
+.main-navi{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 151.5px;
+    height: 80px;
+    align-items: center;
+}
+.main-navi .logo{
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.main-navi .logo i{
+    font-size: 40px;
+    margin-right: 7px;
+}
+.main-navi .logo a{
+    text-decoration: none;
+    font-size: 24px;
+    color: #ff385c;
+    font-weight: 900;
+    display: flex;
+    align-self: center;
+}
+.main-navi .search{
+    width: 300px;
+    height: 48px;
+    border: 1px solid #dddddd;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    outline: none;
+    padding :0 0 0 8px;
+    font-weight: 800;
+    margin: -1px;
+}
+.main-navi .search .r-icon{
+    background-color: #ff385c;
+    border-radius: 100%;
+    margin: 7px 7px 7px 0;
+    padding: 10px;
+    color: white;
+    align-items: center;
+}
+.main-navi .menu{
+    display: flex;
+    align-items: center;
+}
+
+.main-navi a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 800;
+    display: flex;
+    align-self: center;
+}
+.main-navi .lang{
+    width: 70px;
+    height: 42px;
+    border: 1px solid white;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline : none;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.main-navi .lang .g-icon {
+    align-items: center;
+    color: black;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+.main-navi .lang .down {
+    margin-left: 3px;
+    font-size: 5px;
+}
+
+.main-navi .menu .id{
+    border : 1px solid black;
+    border-radius : 24px;
+    width : 80px;
+    height: 45px;
+    background-color: white;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-navi .menu .id .id-icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main-navi .menu .id span{
+    font-size : 30px;
+    align-self: center;
+    
+}
+.main-title{
+    padding-left: 151.5px;
+    display:flex;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    height: 80vh;
+
+}
+.main-title .textbox{
+    width : 416px;
+    height : 116px;
+    color : white;
+    display: flex;
+    flex-wrap: wrap;
+    align-self: center;
+    font-size: 58px;
+    font-weight: 600;
+    text-align: start;
+    letter-spacing: -0.02rem;
+}
+.main-title .around{
+    color : black;
+    border-radius: 8px;
+    display: flex;
+    align-items : center;
+    font-weight: 800;
+    margin-top:40px;
+    padding : 5px;
+}
+
+#local{
+    padding-left:151.5px;
+    background-color: white;
+}
+#local a{
+    text-decoration: none;
+    
+}
+#local #location{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 60px;
+}
+#local #location img{
+    width: 70px;
+    height: 70px;
+    border-radius: 10%;
+    align-items: center; 
+    margin-top :10px;
+}
+#local #location a{
+    align-items: center;
+    font-size: 16px;
+    position: relative;
+    color: black;
+    display: flex;
+}
+
+#local #location div{
+    margin : 20px 0 0 20px
+}
+
+
+#local #location  a span{
+    font-weight: 700;
+    
+}
+#everywhere{
+    padding-left :151.5px;
+    margin-top : 75px;
+    
+}
+
+#everywhere h1{
+    font-size: 32px;
+    padding-bottom : 50px;
+}
+#everywhere .house{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding : 0px 80px 80px 0px;
+    justify-content: flex-start;
+    position: relative;
+    align-content : center;
+}
+
+#everywhere .house img{
+    width : 100%;
+    height : 100%;
+    border-radius: 5%;
+    border: 5px solid white;
+    text-decoration : none;
+}
+#everywhere .house a{
+    text-decoration: none;
+    color : black;
+    justify-content: flex-start;
+
+}
+#everywhere .house a span{
+    color: black;
+    font-weight: 700;
+}
+
+#exp  {
+    background-color: black;
+    color : white;
+    padding : 80px;
+}
+#exp .online{
+    display: flex;
+    justify-content: space-between ;
+    margin-bottom: 32px;
+    
+}
+#exp .online span{
+    font-size: 32px;
+    font-weight: bold;
+}
+#exp .online .all{
+    background-color: black;
+    border: 1px solid white;
+    text-align: center;
+    color: white;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight : 600;
+    padding: 7px;
+    line-height: 16px;
+    display: inline-block;
+    height: 40px;
+}
+#exp .photo{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr 1fr ;
+    gap: 16px;
+    box-sizing: border-box;
+    vertical-align: bottom;
+}
+#exp .photo :first-child{
+    grid-column : 1/3;
+    grid-row :1/4;
+}
+
+#exp .photo :last-child{
+    grid-column: 3/5;
+    grid-row:2/4;
+}
+#exp .photo a img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    text-decoration: none;
+}
+#exp .photo span{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    top:-60px;
+    left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#host{
+    padding : 80px;
+}
+#host .member p{
+    font-size: 32px;
+    font-weight: 600;
+}
+#host .exp{
+    padding-top: 32px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-decoration: none;
+    gap : 20px;
+}
+#host .exp a{
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+#host .exp a img{
+    width : 100%;
+    height : 100%;
+    border-radius : 8px;
+}
+#list{
+    padding-left: 80px;
+    padding-top: 40px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    background-color: lightgray;
+}
+
+#list .list  h4{
+    font-size: 12px;
+}
+#list .list ul{
+    list-style: none;
+}
+#list .list ul li{
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+#footer{
+    padding : 80px;
+    background-color: lightgray;
+    font-size: 14px;
+    justify-content: flex-start;
+}
+#footer #footnav{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+}
+
+#footer #footnav .copyright{
+    text-decoration: none;
+    grid-column: 1/5;
+}
+#footer #footnav .copyright a{
+    text-decoration: none;
+    color : black;
+}
+
+#footer #footnav .currency {
+    color: black;
+    display:flex;
+    justify-content: space-around;
+}
+#footer #footnav .currency a{
+    color: black;
+}
+#footer #footnav .media{
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 18px;
+}
+
